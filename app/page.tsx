@@ -276,41 +276,112 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-8 lg:px-10">
-        <div className="overflow-hidden rounded-[2.2rem] border border-[color:var(--line)] bg-[linear-gradient(135deg,#0d1724_0%,#152a3f_100%)] p-7 md:p-10">
-          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-            <div className="space-y-5">
-              <p className="section-kicker text-[color:var(--platinum-soft)]">Close Strong</p>
-              <h2 className="display-heading text-4xl leading-none text-white md:text-6xl">
-                A much better sales demo for Platinum is now in place on the homepage.
-              </h2>
-              <p className="max-w-2xl text-lg leading-8 text-slate-200">
-                It looks more premium, feels more intentional, and leaves the right visual
-                placeholders wherever the exact facts still need business-owner confirmation.
+        <div className="grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-start">
+          <div className="space-y-6 pt-2">
+            <p className="section-kicker">Book Your Detail</p>
+            <h2 className="section-title text-[color:var(--ink-strong)]">
+              Ready to get your vehicle cleaned up without leaving home?
+            </h2>
+            <p className="max-w-xl text-lg leading-8 text-[color:var(--muted)]">
+              Platinum Mobile Car Detailing brings professional interior and exterior
+              detailing to your driveway in Fort Worth. Reach out with your vehicle type
+              and the service you need, and we&apos;ll help you schedule the right detail.
+            </p>
+
+            <div className="space-y-4 rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_20px_50px_rgba(7,17,28,0.06)]">
+              <div>
+                <p className="text-xs uppercase tracking-[0.22em] text-[color:var(--muted)]">
+                  Call or text
+                </p>
+                <a
+                  href="tel:8178423017"
+                  className="mt-2 block text-3xl font-semibold text-[color:var(--ink-strong)]"
+                >
+                  (817) 842-3017
+                </a>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.22em] text-[color:var(--muted)]">
+                  Email
+                </p>
+                <a
+                  href="mailto:fortworth@platinummobilecardetailing.com"
+                  className="mt-2 block text-lg font-medium text-[color:var(--steel-dark)]"
+                >
+                  fortworth@platinummobilecardetailing.com
+                </a>
+              </div>
+              <p className="text-sm leading-7 text-[color:var(--muted)]">
+                Same-day and next-available appointments depend on schedule, location, and
+                the level of detailing requested.
               </p>
             </div>
+          </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              <a
-                href="tel:8178423017"
-                className="rounded-[1.6rem] bg-[color:var(--platinum)] px-6 py-5 text-center text-base font-semibold text-slate-950 hover:-translate-y-0.5"
-              >
-                Tap to call Platinum
-              </a>
-              <a
-                href="mailto:fortworth@platinummobilecardetailing.com"
-                className="rounded-[1.6rem] border border-white/15 bg-white/8 px-6 py-5 text-center text-base font-semibold text-white hover:-translate-y-0.5"
-              >
-                Send booking email
-              </a>
-              <div className="rounded-[1.6rem] border border-white/12 bg-white/8 px-5 py-5 sm:col-span-2">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/50">
-                  Launch reminder
-                </p>
-                <p className="mt-3 text-base leading-7 text-slate-200">
-                  Swap in verified review quotes, real owned photos, and finalized package
-                  specifics before this goes live for the business.
+          <div className="rounded-[2.4rem] bg-[#dceaf7] px-6 py-8 shadow-[0_26px_70px_rgba(95,126,153,0.16)] md:px-10 md:py-10">
+            <div className="mx-auto max-w-4xl">
+              <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[color:var(--steel-dark)]">
+                    Quick Request Form
+                  </p>
+                  <h3 className="mt-3 text-4xl font-semibold tracking-tight text-[color:var(--ink-strong)]">
+                    Tell us what your vehicle needs
+                  </h3>
+                </div>
+                <p className="max-w-sm text-sm leading-6 text-[color:var(--steel-dark)]/80">
+                  A simple request is all it takes to get pricing, availability, and the
+                  right service recommendation.
                 </p>
               </div>
+
+              <form className="space-y-6">
+                <label className="block space-y-3">
+                  <span className="text-2xl font-medium text-[color:var(--ink-strong)]">
+                    Full Name*
+                  </span>
+                  <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    className="w-full rounded-[1.5rem] border border-[#b9c6d5] bg-white px-7 py-6 text-2xl text-[color:var(--ink-strong)] outline-none placeholder:text-[#9aa3af]"
+                  />
+                </label>
+
+                <label className="block space-y-3">
+                  <span className="text-2xl font-medium text-[color:var(--ink-strong)]">
+                    Phone Number*
+                  </span>
+                  <input
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    className="w-full rounded-[1.5rem] border border-[#b9c6d5] bg-white px-7 py-6 text-2xl text-[color:var(--ink-strong)] outline-none placeholder:text-[#9aa3af]"
+                  />
+                </label>
+
+                <label className="block space-y-3">
+                  <span className="text-2xl font-medium text-[color:var(--ink-strong)]">
+                    Service Requested*
+                  </span>
+                  <textarea
+                    placeholder="Example: interior detail for a family SUV, exterior wash and wax, or a full detail before selling the vehicle."
+                    rows={5}
+                    className="w-full resize-none rounded-[1.5rem] border border-[#b9c6d5] bg-white px-7 py-6 text-2xl leading-10 text-[color:var(--ink-strong)] outline-none placeholder:text-[#9aa3af]"
+                  />
+                </label>
+
+                <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center sm:justify-between">
+                  <button
+                    type="button"
+                    className="rounded-full bg-[#516988] px-12 py-5 text-2xl font-semibold text-white shadow-[0_18px_34px_rgba(81,105,136,0.22)] hover:-translate-y-0.5"
+                  >
+                    Request Booking
+                  </button>
+                  <p className="max-w-sm text-sm leading-6 text-[color:var(--steel-dark)]/75">
+                    Demo layout only. Connect this to the real booking flow or contact form
+                    before launch.
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
