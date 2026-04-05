@@ -11,6 +11,22 @@ const envSchema = z.object({
   APP_BASE_URL: z.string().url().default("http://localhost:3000"),
 });
 
+const requiredEnvKeys = [
+  "DATABASE_URL",
+  "DIRECT_URL",
+  "NEXT_PUBLIC_SUPABASE_URL",
+  "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY",
+  "SUPABASE_SERVICE_ROLE_KEY",
+  "MISTRAL_API_KEY",
+] as const;
+
+export function hasRequiredAppEnv() {
+  return requiredEnvKeys.every((key) => {
+    const value = process.env[key];
+    return typeof value === "string" && value.trim().length > 0;
+  });
+}
+
 export function getEnv() {
   return envSchema.parse({
     DATABASE_URL: process.env.DATABASE_URL,

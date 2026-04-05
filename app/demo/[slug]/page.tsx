@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { hasRequiredAppEnv } from "@/lib/env";
 import { prisma } from "@/lib/prisma";
 
 type DemoPageProps = {
@@ -8,7 +9,13 @@ type DemoPageProps = {
   }>;
 };
 
+export const dynamic = "force-dynamic";
+
 export default async function DemoPage({ params }: DemoPageProps) {
+  if (!hasRequiredAppEnv()) {
+    notFound();
+  }
+
   const { slug } = await params;
 
   const demoSite = await prisma.demoSite.findUnique({

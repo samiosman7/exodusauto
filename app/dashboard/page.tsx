@@ -1,9 +1,33 @@
 import Link from "next/link";
 
 import { DashboardShell } from "@/components/dashboard-shell";
+import { hasRequiredAppEnv } from "@/lib/env";
 import { prisma } from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 export default async function DashboardOverviewPage() {
+  if (!hasRequiredAppEnv()) {
+    return (
+      <DashboardShell
+        active="overview"
+        title="Overview"
+        description="Backend features need production environment variables before they can run."
+      >
+        <section className="rounded-[2rem] border border-line bg-surface p-8">
+          <h2 className="text-3xl font-semibold text-[color:var(--ink-deep)]">
+            Deployment is live, but the dashboard is not configured yet.
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-8 text-[color:var(--muted)]">
+            Add the database, Supabase, Mistral, and app URL environment variables from
+            [`.env.example`](/C:/Users/samis/Downloads/website/.env.example) in your hosting
+            provider before using the lead management dashboard.
+          </p>
+        </section>
+      </DashboardShell>
+    );
+  }
+
   const campaigns = await prisma.campaign.findMany({
     orderBy: {
       createdAt: "desc",

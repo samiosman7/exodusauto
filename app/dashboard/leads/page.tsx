@@ -1,12 +1,33 @@
 import { DashboardShell } from "@/components/dashboard-shell";
 import { LeadFinder } from "@/components/lead-finder";
+import { hasRequiredAppEnv } from "@/lib/env";
 import { prisma } from "@/lib/prisma";
+
+export const dynamic = "force-dynamic";
 
 export default async function DashboardLeadsPage({
   searchParams,
 }: {
   searchParams: Promise<{ location?: string; niche?: string }>;
 }) {
+  if (!hasRequiredAppEnv()) {
+    return (
+      <DashboardShell
+        active="leads"
+        title="Lead Finder"
+        description="Backend features need production environment variables before they can run."
+      >
+        <section className="rounded-[2rem] border border-line bg-surface p-8 text-[color:var(--muted)]">
+          Configure the environment variables from
+          {" "}
+          [`.env.example`](/C:/Users/samis/Downloads/website/.env.example)
+          {" "}
+          in production to enable campaign creation, lead storage, demos, and scripts.
+        </section>
+      </DashboardShell>
+    );
+  }
+
   const params = await searchParams;
   const location = params.location?.trim() ?? "";
   const niche = params.niche?.trim() ?? "";

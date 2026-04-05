@@ -2,6 +2,7 @@ import { z } from "zod";
 
 import { generateCallScript } from "@/lib/ai/generate-script";
 import { jsonError, readJsonBody } from "@/lib/api";
+import { hasRequiredAppEnv } from "@/lib/env";
 import { prisma } from "@/lib/prisma";
 
 const generateScriptSchema = z.object({
@@ -9,6 +10,10 @@ const generateScriptSchema = z.object({
 });
 
 export async function POST(request: Request) {
+  if (!hasRequiredAppEnv()) {
+    return jsonError("Server environment variables are not configured for this feature.", 503);
+  }
+
   try {
     const body = await readJsonBody(request);
     const input = generateScriptSchema.parse(body);

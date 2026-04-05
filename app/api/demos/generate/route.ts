@@ -3,7 +3,7 @@ import { z } from "zod";
 import { generateDemoContent } from "@/lib/ai/generate-demo";
 import { jsonError, readJsonBody } from "@/lib/api";
 import { buildDemoSlug } from "@/lib/demo-site";
-import { getEnv } from "@/lib/env";
+import { getEnv, hasRequiredAppEnv } from "@/lib/env";
 import { prisma } from "@/lib/prisma";
 
 const generateDemoSchema = z.object({
@@ -12,6 +12,10 @@ const generateDemoSchema = z.object({
 });
 
 export async function POST(request: Request) {
+  if (!hasRequiredAppEnv()) {
+    return jsonError("Server environment variables are not configured for this feature.", 503);
+  }
+
   try {
     const env = getEnv();
     const body = await readJsonBody(request);
