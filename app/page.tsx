@@ -18,35 +18,35 @@ const galleryImages = [
 const serviceCards = [
   {
     tier: "Interior Detail",
-    title: "Restore the cabin",
+    title: "Deep interior cleaning",
     body:
-      "Ideal for daily drivers that need a deeper reset, from heavy dust and spills to built-up grime in the seats, console, and carpets.",
+      "A strong option for vehicles that need more than a quick vacuum. This service is geared toward built-up dust, everyday mess, and restoring a cleaner cabin overall.",
     points: [
-      "Vacuuming and interior wipe-down",
-      "Door panels, dash, and trim cleaned",
-      "Service level depends on vehicle condition",
+      "Seats, carpets, mats, and hard surfaces addressed",
+      "Dash, console, door panels, and trim cleaned",
+      "Great for family vehicles and daily drivers",
     ],
   },
   {
     tier: "Full Detail",
-    title: "Inside and out",
+    title: "Complete inside and out service",
     body:
-      "A balanced package for drivers who want the interior cleaned, the exterior refreshed, and the vehicle looking sharp again.",
+      "For drivers who want the interior cleaned and the exterior brought back to a cleaner, glossier finish in one appointment.",
     points: [
-      "Exterior wash and finish enhancement",
-      "Interior surfaces cleaned and vacuumed",
-      "Best fit for routine maintenance",
+      "Exterior wash with attention to wheels and trim",
+      "Interior vacuuming and surface cleaning",
+      "A solid choice for regular upkeep",
     ],
   },
   {
     tier: "Premium Add-Ons",
-    title: "Protection and finishing work",
+    title: "Specialty detailing options",
     body:
-      "For vehicles needing more time, more correction, or a higher-end finish, Platinum can position premium detailing upgrades around your goals.",
+      "For vehicles that need extra time or more focused work, specialty add-ons can be discussed based on condition and the result you want.",
     points: [
-      "Paint enhancement positioning",
-      "Protection-focused upsell space",
-      "Custom quote recommended",
+      "Heavier interior cleanup when needed",
+      "Additional finish and presentation work",
+      "Best handled with a custom quote",
     ],
   },
 ];
@@ -81,14 +81,6 @@ const contactItems = [
     href: "mailto:fortworth@platinummobilecardetailing.com",
   },
 ];
-
-function DemoBubble({ text }: { text: string }) {
-  return (
-    <span className="inline-flex items-center rounded-full border border-[color:var(--line-strong)] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-[color:var(--steel-dark)]">
-      {text}
-    </span>
-  );
-}
 
 export default function Home() {
   return (
@@ -139,10 +131,10 @@ export default function Home() {
               Professional car detailing that comes to your driveway.
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-[color:var(--muted)] md:text-xl">
-              Platinum Mobile Car Detailing offers convenient interior and exterior detailing
-              for drivers who want a cleaner vehicle without spending half the day at a shop.
-              Whether you need a reset after a busy week or a more complete detail before a
-              sale or event, the goal is simple: make the vehicle look cared for again.
+              Platinum Mobile Car Detailing provides mobile interior and exterior detailing
+              for drivers across Fort Worth who want quality work without the hassle of
+              dropping the vehicle off. Whether your car needs a simple refresh or a more
+              thorough cleanup, the focus is on dependable service and a noticeably cleaner finish.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -160,19 +152,15 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-3">
-              <DemoBubble text="Service menus and pricing should be finalized before launch" />
-            </div>
-
             <ul className="flex flex-wrap gap-3 text-sm font-medium text-[color:var(--steel-dark)]">
               <li className="rounded-full bg-white px-4 py-2 shadow-[0_10px_24px_rgba(7,17,28,0.04)]">
-                Mobile convenience
+                Mobile service at your home or workplace
               </li>
               <li className="rounded-full bg-white px-4 py-2 shadow-[0_10px_24px_rgba(7,17,28,0.04)]">
                 Interior and exterior detailing
               </li>
               <li className="rounded-full bg-white px-4 py-2 shadow-[0_10px_24px_rgba(7,17,28,0.04)]">
-                Fort Worth area service
+                Fort Worth area appointments
               </li>
             </ul>
           </div>
@@ -206,7 +194,7 @@ export default function Home() {
               <div className="flex flex-col justify-between rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_20px_48px_rgba(7,17,28,0.08)]">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">
-                    Current live-site contact
+                    Contact Platinum
                   </p>
                   <p className="mt-4 text-3xl font-semibold text-[color:var(--ink-strong)]">
                     (817) 842-3017
@@ -215,9 +203,10 @@ export default function Home() {
                     fortworth@platinummobilecardetailing.com
                   </p>
                 </div>
-                <div className="mt-5">
-                  <DemoBubble text="Photos pulled from the current Platinum site" />
-                </div>
+                <p className="mt-5 text-sm leading-7 text-[color:var(--muted)]">
+                  Call or send a message to ask about availability, service options, or the
+                  right detail for your vehicle.
+                </p>
               </div>
             </div>
           </div>
@@ -228,19 +217,19 @@ export default function Home() {
         <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5">
           <p className="font-semibold text-[color:var(--ink-strong)]">Mobile service</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
-            A more convenient way to get your vehicle detailed without sitting at a shop.
+            A more convenient way to get your vehicle detailed without waiting at a shop.
           </p>
         </div>
         <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5">
           <p className="font-semibold text-[color:var(--ink-strong)]">Interior and exterior care</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
-            Built around the services most drivers actually ask for: inside, outside, or both.
+            Built around what most drivers actually need: interior cleaning, exterior detailing, or both.
           </p>
         </div>
         <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5">
           <p className="font-semibold text-[color:var(--ink-strong)]">Simple booking path</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
-            Clear contact details and a cleaner request section make the next step obvious.
+            Clear contact details and a straightforward request form make it easy to get started.
           </p>
         </div>
       </section>
@@ -252,7 +241,7 @@ export default function Home() {
         <div className="space-y-4">
           <p className="section-kicker">Why drivers choose mobile detailing</p>
           <h2 className="section-title text-[color:var(--ink-strong)]">
-            Cleaner presentation, less hassle, and a better use of your time.
+            Quality detailing without taking extra time out of your day.
           </h2>
         </div>
 
@@ -278,7 +267,7 @@ export default function Home() {
         <div className="space-y-4">
           <p className="section-kicker">Services</p>
           <h2 className="section-title text-[color:var(--ink-strong)]">
-            Interior, exterior, and premium detailing options.
+            Interior, exterior, and full-service detailing options.
           </h2>
         </div>
 
@@ -322,9 +311,6 @@ export default function Home() {
                   <li key={point}>• {point}</li>
                 ))}
               </ul>
-              <div className="mt-6">
-                <DemoBubble text="Not actually accurate, just a demo" />
-              </div>
             </article>
           ))}
         </div>
@@ -337,7 +323,7 @@ export default function Home() {
         <div className="space-y-4">
           <p className="section-kicker">Recent look and feel</p>
           <h2 className="section-title text-[color:var(--ink-strong)]">
-            Images currently shown on Platinum&apos;s live website.
+            A look at the finish and presentation style.
           </h2>
         </div>
 
@@ -353,7 +339,7 @@ export default function Home() {
               />
             </div>
             <figcaption className="px-5 py-4 text-sm leading-6 text-[color:var(--muted)]">
-              Hero image currently served from the live Platinum domain.
+              Clean exterior presentation with a strong gloss finish.
             </figcaption>
           </figure>
 
@@ -372,7 +358,7 @@ export default function Home() {
                 />
               </div>
               <figcaption className="px-5 py-4 text-sm leading-6 text-[color:var(--muted)]">
-                Supporting photo currently used on the Platinum site.
+                Additional vehicle presentation from the current site imagery.
               </figcaption>
             </figure>
           ))}
@@ -384,21 +370,20 @@ export default function Home() {
           <div className="space-y-5">
             <p className="section-kicker">Customer feedback</p>
             <h2 className="section-title text-[color:var(--ink-strong)]">
-              Review section ready for real testimonials.
+              Customer satisfaction matters.
             </h2>
             <p className="text-base leading-8 text-[color:var(--muted)]">
-              This area is styled to match a real detailing website, but it should be filled
-              with verified review quotes from Platinum&apos;s actual customers before launch.
+              Platinum Mobile Car Detailing is built around convenience, solid communication,
+              and a cleaner result you can see when the service is finished.
             </p>
-            <DemoBubble text="Review copy not actually accurate, just a demo" />
           </div>
 
           <div className="grid gap-4 md:grid-cols-2">
             {[
-              "Fast response, easy scheduling, and a huge difference in how clean the vehicle looked afterward.",
-              "Perfect section for a short quote about interior work, convenience, and overall professionalism.",
-              "Another review card can highlight exterior results, reliability, and the mobile experience.",
-              "This layout gives the homepage the same testimonial rhythm as the reference site without inventing facts.",
+              "Interior cleaning that leaves the cabin looking noticeably fresher and more presentable.",
+              "Mobile service that helps busy drivers get their vehicles taken care of without the extra trip.",
+              "Straightforward communication before the appointment and a cleaner vehicle when the job is done.",
+              "A better overall experience for drivers who want quality work and practical convenience.",
             ].map((quote) => (
               <article
                 key={quote}
@@ -419,12 +404,12 @@ export default function Home() {
           <div className="space-y-6">
             <p className="section-kicker">Book your detail</p>
             <h2 className="section-title text-[color:var(--ink-strong)]">
-              Request your appointment.
+              Request your appointment today.
             </h2>
             <p className="text-lg leading-8 text-[color:var(--muted)]">
-              Tell Platinum about your vehicle, your area, and the type of service you are
-              looking for. This section is designed to feel like a real request form and can
-              be connected to a live booking flow later.
+              Tell Platinum about your vehicle, your location, and the type of detailing you
+              need. If you are not sure which service makes the most sense, just include a few
+              details and you can be pointed in the right direction.
             </p>
 
             <div className="space-y-4 rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_18px_40px_rgba(7,17,28,0.05)]">
@@ -501,7 +486,9 @@ export default function Home() {
               >
                 Request My Booking
               </button>
-              <DemoBubble text="Connect this to the real contact flow before launch" />
+              <p className="text-sm leading-6 text-[color:var(--steel-dark)]/80">
+                Call or text for faster scheduling help.
+              </p>
             </div>
           </form>
         </div>
