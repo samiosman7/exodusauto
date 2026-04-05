@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --background: #eef3f7;
+  --foreground: #102031;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-strong: rgba(255, 255, 255, 0.96);
+  --surface-muted: #dfe8ef;
+  --line: rgba(16, 32, 49, 0.1);
+  --line-strong: rgba(16, 32, 49, 0.18);
+  --muted: #4c5f73;
+  --accent: #8bb0cf;
+  --accent-soft: #dce8f2;
+  --forest: #19344d;
+  --ink-deep: #0b1724;
+  --ink-strong: #09131d;
+  --platinum: #d9e1e8;
+  --platinum-soft: #f2f6f8;
+  --platinum-fog: #e7edf2;
+  --steel: #5f7e99;
+  --steel-dark: #203446;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-surface-muted: var(--surface-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-forest: var(--forest);
+  --color-ink-deep: var(--ink-deep);
+  --color-ink-strong: var(--ink-strong);
+  --color-platinum: var(--platinum);
+  --color-platinum-soft: var(--platinum-soft);
+  --color-platinum-fog: var(--platinum-fog);
+  --color-steel: var(--steel);
+  --color-steel-dark: var(--steel-dark);
+  --font-sans: "Avenir Next", Montserrat, "Segoe UI", sans-serif;
+  --font-serif: "Baskerville Old Face", "Libre Baskerville", Georgia, serif;
+  --font-mono: "Consolas", "SFMono-Regular", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  background-image:
+    radial-gradient(circle at top left, rgba(139, 176, 207, 0.24), transparent 24%),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.72), transparent 22%),
+    linear-gradient(180deg, #f5f9fc 0%, #e8eef3 48%, #edf2f6 100%);
+}
+
+::selection {
+  background: rgba(139, 176, 207, 0.32);
+  color: var(--foreground);
+}
+
+a,
+button {
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+.display-heading {
+  font-family: var(--font-serif);
+  letter-spacing: -0.04em;
+}
+
+.section-kicker {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--steel-dark);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4vw, 4.6rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+}
