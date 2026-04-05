@@ -82,6 +82,27 @@ const contactItems = [
   },
 ];
 
+const reviews = [
+  {
+    name: "Ricardo Ponce de Leon",
+    meta: "1 review • a day ago",
+    text:
+      "Got my windows tinted by Platinum Mobile Car Detailing of Fort Worth and it honestly changed the whole vibe of my car. It looks way cleaner and I do not feel like I am getting cooked every time I drive anymore. The tint came out super even, with no weird lines or bubbles or anything like that. They pulled up, got straight to it, and did not waste time. Just a smooth, easy experience all around.",
+  },
+  {
+    name: "Tyler Bulldock",
+    meta: "1 review • 3 days ago",
+    text:
+      "Had Platinum Mobile Car Detailing of Fort Worth come out to clean up my boat and I am honestly glad I did. It was starting to look pretty rough from being out on the water all the time, but they got it cleaned up really nice. The whole process felt easy, professional, and worth it.",
+  },
+  {
+    name: "Alexa Ledezma",
+    meta: "4 reviews • 4 days ago",
+    text:
+      "Great experience with Platinum Mobile Car Detailing of Fort Worth. Super convenient mobile service, showed up on time, and my car looks brand new. If you need car detailing in Fort Worth, definitely recommend them.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
@@ -123,7 +144,10 @@ export default function Home() {
         </header>
       </div>
 
-      <section id="home" className="mx-auto max-w-7xl px-5 pb-10 pt-6 md:px-8 lg:px-10">
+      <section
+        id="home"
+        className="mx-auto max-w-7xl px-5 pb-10 pt-6 motion-fade-up md:px-8 lg:px-10"
+      >
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="space-y-7">
             <p className="section-kicker">Mobile detailing for Fort Worth drivers</p>
@@ -134,7 +158,8 @@ export default function Home() {
               Platinum Mobile Car Detailing provides mobile interior and exterior detailing
               for drivers across Fort Worth who want quality work without the hassle of
               dropping the vehicle off. Whether your car needs a simple refresh or a more
-              thorough cleanup, the focus is on dependable service and a noticeably cleaner finish.
+              thorough cleanup, the focus is on dependable service and a noticeably cleaner
+              finish.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -166,7 +191,7 @@ export default function Home() {
           </div>
 
           <div className="relative grid gap-5 lg:min-h-[38rem]">
-            <div className="relative overflow-hidden rounded-[2.2rem] border border-white/60 bg-white shadow-[0_28px_70px_rgba(7,17,28,0.12)]">
+            <div className="relative overflow-hidden rounded-[2.2rem] border border-white/60 bg-white shadow-[0_28px_70px_rgba(7,17,28,0.12)] motion-lift">
               <div className="relative h-[28rem] w-full">
                 <Image
                   src={galleryImages[0].src}
@@ -179,7 +204,7 @@ export default function Home() {
             </div>
 
             <div className="grid gap-5 sm:grid-cols-[0.9fr_1.1fr]">
-              <div className="relative overflow-hidden rounded-[1.8rem] border border-white/60 bg-white shadow-[0_20px_48px_rgba(7,17,28,0.1)]">
+              <div className="relative overflow-hidden rounded-[1.8rem] border border-white/60 bg-white shadow-[0_20px_48px_rgba(7,17,28,0.1)] motion-lift">
                 <div className="relative h-52 w-full">
                   <Image
                     src={galleryImages[1].src}
@@ -191,7 +216,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-between rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_20px_48px_rgba(7,17,28,0.08)]">
+              <div className="flex flex-col justify-between rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_20px_48px_rgba(7,17,28,0.08)] motion-lift">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">
                     Contact Platinum
@@ -213,20 +238,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-5 px-5 py-6 md:px-8 lg:grid-cols-3 lg:px-10">
-        <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5">
+      <section className="mx-auto grid max-w-7xl gap-5 px-5 py-6 motion-fade-up md:px-8 lg:grid-cols-3 lg:px-10">
+        <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5 motion-lift">
           <p className="font-semibold text-[color:var(--ink-strong)]">Mobile service</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
             A more convenient way to get your vehicle detailed without waiting at a shop.
           </p>
         </div>
-        <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5">
+        <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5 motion-lift">
           <p className="font-semibold text-[color:var(--ink-strong)]">Interior and exterior care</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
-            Built around what most drivers actually need: interior cleaning, exterior detailing, or both.
+            Built around what most drivers actually need: interior cleaning, exterior detailing,
+            or both.
           </p>
         </div>
-        <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5">
+        <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5 motion-lift">
           <p className="font-semibold text-[color:var(--ink-strong)]">Simple booking path</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
             Clear contact details and a straightforward request form make it easy to get started.
@@ -236,7 +262,7 @@ export default function Home() {
 
       <section
         id="why-platinum"
-        className="mx-auto max-w-7xl px-5 py-20 md:px-8 lg:px-10"
+        className="mx-auto max-w-7xl px-5 py-20 motion-fade-up md:px-8 lg:px-10"
       >
         <div className="space-y-4">
           <p className="section-kicker">Why drivers choose mobile detailing</p>
@@ -249,7 +275,7 @@ export default function Home() {
           {promiseCards.map((card) => (
             <article
               key={card.title}
-              className="rounded-[1.9rem] border border-[color:var(--line)] bg-white p-7 shadow-[0_22px_60px_rgba(7,17,28,0.05)]"
+              className="rounded-[1.9rem] border border-[color:var(--line)] bg-white p-7 shadow-[0_22px_60px_rgba(7,17,28,0.05)] motion-lift"
             >
               <h3 className="text-2xl font-semibold text-[color:var(--ink-strong)]">
                 {card.title}
@@ -262,7 +288,7 @@ export default function Home() {
 
       <section
         id="services"
-        className="mx-auto max-w-7xl px-5 py-20 md:px-8 lg:px-10"
+        className="mx-auto max-w-7xl px-5 py-20 motion-fade-up md:px-8 lg:px-10"
       >
         <div className="space-y-4">
           <p className="section-kicker">Services</p>
@@ -275,7 +301,7 @@ export default function Home() {
           {serviceCards.map((card, index) => (
             <article
               key={card.tier}
-              className={`rounded-[2rem] border p-7 shadow-[0_22px_60px_rgba(7,17,28,0.06)] ${
+              className={`rounded-[2rem] border p-7 shadow-[0_22px_60px_rgba(7,17,28,0.06)] motion-lift ${
                 index === 1
                   ? "border-[color:var(--steel)] bg-[color:var(--steel-dark)] text-white"
                   : "border-[color:var(--line)] bg-white"
@@ -318,7 +344,7 @@ export default function Home() {
 
       <section
         id="results"
-        className="mx-auto max-w-7xl px-5 py-20 md:px-8 lg:px-10"
+        className="mx-auto max-w-7xl px-5 py-20 motion-fade-up md:px-8 lg:px-10"
       >
         <div className="space-y-4">
           <p className="section-kicker">Recent look and feel</p>
@@ -328,7 +354,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          <figure className="overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-white shadow-[0_20px_50px_rgba(7,17,28,0.06)] md:col-span-2">
+          <figure className="overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-white shadow-[0_20px_50px_rgba(7,17,28,0.06)] motion-lift md:col-span-2">
             <div className="relative h-80 w-full">
               <Image
                 src={galleryImages[0].src}
@@ -346,7 +372,7 @@ export default function Home() {
           {galleryImages.slice(1).map((image) => (
             <figure
               key={image.src}
-              className="overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-white shadow-[0_20px_50px_rgba(7,17,28,0.06)]"
+              className="overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-white shadow-[0_20px_50px_rgba(7,17,28,0.06)] motion-lift"
             >
               <div className="relative h-80 w-full">
                 <Image
@@ -365,40 +391,50 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20 md:px-8 lg:px-10">
+      <section className="mx-auto max-w-7xl px-5 py-20 motion-fade-up md:px-8 lg:px-10">
         <div className="grid gap-8 rounded-[2.2rem] border border-[color:var(--line)] bg-white p-8 shadow-[0_24px_70px_rgba(7,17,28,0.06)] lg:grid-cols-[0.75fr_1.25fr] lg:p-10">
           <div className="space-y-5">
             <p className="section-kicker">Customer feedback</p>
             <h2 className="section-title text-[color:var(--ink-strong)]">
-              Customer satisfaction matters.
+              Real reviews from Fort Worth customers.
             </h2>
             <p className="text-base leading-8 text-[color:var(--muted)]">
-              Platinum Mobile Car Detailing is built around convenience, solid communication,
-              and a cleaner result you can see when the service is finished.
+              Customers talk about the convenience of the mobile service, the quality of the
+              work, and how much better their vehicles look when the job is done.
             </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {[
-              "Interior cleaning that leaves the cabin looking noticeably fresher and more presentable.",
-              "Mobile service that helps busy drivers get their vehicles taken care of without the extra trip.",
-              "Straightforward communication before the appointment and a cleaner vehicle when the job is done.",
-              "A better overall experience for drivers who want quality work and practical convenience.",
-            ].map((quote) => (
-              <article
-                key={quote}
-                className="rounded-[1.6rem] border border-[color:var(--line)] bg-[color:var(--surface-muted)] p-5"
-              >
-                <p className="text-base leading-7 text-[color:var(--steel-dark)]">{quote}</p>
-              </article>
-            ))}
+          <div className="review-marquee-shell">
+            <div className="review-marquee-track">
+              {[...reviews, ...reviews].map((review, index) => (
+                <article
+                  key={`${review.name}-${index}`}
+                  className="review-card-slide rounded-[1.6rem] border border-[color:var(--line)] bg-[color:var(--surface-muted)] p-5 shadow-[0_14px_34px_rgba(7,17,28,0.05)]"
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <p className="text-lg font-semibold text-[color:var(--ink-strong)]">
+                        {review.name}
+                      </p>
+                      <p className="mt-1 text-sm text-[color:var(--muted)]">{review.meta}</p>
+                    </div>
+                    <p className="text-sm font-semibold tracking-[0.16em] text-[color:var(--steel-dark)]">
+                      ★★★★★
+                    </p>
+                  </div>
+                  <p className="mt-4 text-base leading-7 text-[color:var(--steel-dark)]">
+                    {review.text}
+                  </p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <section
         id="booking"
-        className="mx-auto max-w-7xl px-5 pb-24 pt-20 md:px-8 lg:px-10"
+        className="mx-auto max-w-7xl px-5 pb-24 pt-20 motion-fade-up md:px-8 lg:px-10"
       >
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <div className="space-y-6">
@@ -412,7 +448,7 @@ export default function Home() {
               details and you can be pointed in the right direction.
             </p>
 
-            <div className="space-y-4 rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_18px_40px_rgba(7,17,28,0.05)]">
+            <div className="space-y-4 rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_18px_40px_rgba(7,17,28,0.05)] motion-lift">
               {contactItems.map((item) => (
                 <p key={item.label} className="text-base leading-7 text-[color:var(--muted)]">
                   <strong className="text-[color:var(--ink-strong)]">{item.label}</strong>{" "}
@@ -424,7 +460,7 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="rounded-[2.2rem] bg-[#dceaf7] p-6 shadow-[0_26px_70px_rgba(95,126,153,0.16)] md:p-10">
+          <form className="rounded-[2.2rem] bg-[#dceaf7] p-6 shadow-[0_26px_70px_rgba(95,126,153,0.16)] motion-float md:p-10">
             <div className="grid gap-5 md:grid-cols-2">
               <label className="space-y-3">
                 <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[color:var(--steel-dark)]">
@@ -464,7 +500,8 @@ export default function Home() {
                   <option>Interior detail</option>
                   <option>Full detail</option>
                   <option>Premium add-ons</option>
-                  <option>Not sure yet</option>
+                  <option>Window tint</option>
+                  <option>Boat detailing</option>
                 </select>
               </label>
               <label className="space-y-3 md:col-span-2">

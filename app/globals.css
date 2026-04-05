@@ -98,3 +98,78 @@ button {
   line-height: 0.96;
   letter-spacing: -0.04em;
 }
+
+.motion-fade-up {
+  animation: fade-up 700ms ease-out both;
+}
+
+.motion-lift {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.motion-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 64px rgba(7, 17, 28, 0.1);
+}
+
+.motion-float {
+  animation: float-in 900ms ease-out both;
+}
+
+.review-marquee-shell {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.review-marquee-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: review-scroll 34s linear infinite;
+}
+
+.review-marquee-shell:hover .review-marquee-track {
+  animation-play-state: paused;
+}
+
+.review-card-slide {
+  width: min(24rem, calc(100vw - 5rem));
+  flex: 0 0 auto;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes review-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
