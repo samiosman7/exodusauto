@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --background: #eef3f7;
-  --foreground: #102031;
-  --surface: rgba(255, 255, 255, 0.86);
-  --surface-strong: rgba(255, 255, 255, 0.96);
-  --surface-muted: #dfe8ef;
-  --line: rgba(16, 32, 49, 0.1);
-  --line-strong: rgba(16, 32, 49, 0.18);
-  --muted: #4c5f73;
-  --accent: #8bb0cf;
-  --accent-soft: #dce8f2;
-  --forest: #19344d;
-  --ink-deep: #0b1724;
-  --ink-strong: #09131d;
-  --platinum: #d9e1e8;
-  --platinum-soft: #f2f6f8;
-  --platinum-fog: #e7edf2;
-  --steel: #5f7e99;
-  --steel-dark: #203446;
+  --background: #edf2f5;
+  --foreground: #142536;
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-strong: rgba(255, 255, 255, 0.98);
+  --surface-muted: #e3eaf0;
+  --line: rgba(20, 37, 54, 0.11);
+  --line-strong: rgba(20, 37, 54, 0.2);
+  --muted: #526578;
+  --accent: #b69a6a;
+  --accent-soft: #ebe0cc;
+  --forest: #1f3852;
+  --ink-deep: #0d1b29;
+  --ink-strong: #0b1723;
+  --platinum: #d7dee4;
+  --platinum-soft: #f6f7f5;
+  --platinum-fog: #edf1f3;
+  --steel: #607892;
+  --steel-dark: #23384d;
 }
 
 @theme inline {
@@ -58,13 +58,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   background-image:
-    radial-gradient(circle at top left, rgba(139, 176, 207, 0.24), transparent 24%),
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.72), transparent 22%),
-    linear-gradient(180deg, #f5f9fc 0%, #e8eef3 48%, #edf2f6 100%);
+    radial-gradient(circle at top left, rgba(182, 154, 106, 0.12), transparent 22%),
+    radial-gradient(circle at top right, rgba(122, 149, 175, 0.16), transparent 24%),
+    linear-gradient(180deg, #f7f8f7 0%, #edf2f5 46%, #e7edf1 100%);
 }
 
 ::selection {
-  background: rgba(139, 176, 207, 0.32);
+  background: rgba(182, 154, 106, 0.22);
   color: var(--foreground);
 }
 
