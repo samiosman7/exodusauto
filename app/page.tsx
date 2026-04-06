@@ -3,103 +3,101 @@ import Image from "next/image";
 const galleryImages = [
   {
     src: "https://assets.zyrosite.com/HgtFJyWutRlksl51/sffffffffffffffffff-vkgdbGDkTKWlKMg9.jpg",
-    alt: "Vehicle photo currently displayed on platinummobilecardetailing.com",
+    alt: "Detailed vehicle with a polished exterior finish",
   },
   {
     src: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1231,fit=crop/HgtFJyWutRlksl51/croow-uVQkedE6DVQxXgGa.jpg",
-    alt: "Vehicle detail image currently displayed on platinummobilecardetailing.com",
+    alt: "Vehicle detail photo used in the Platinum Mobile demo gallery",
   },
   {
     src: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1230,fit=crop/HgtFJyWutRlksl51/sffor-cVsC8qmMXOp2SHcl.jpg",
-    alt: "Vehicle cleaning photo currently displayed on platinummobilecardetailing.com",
+    alt: "Vehicle cleaning photo used in the Platinum Mobile demo gallery",
   },
 ];
 
 const serviceCards = [
   {
-    tier: "Interior Detail",
-    title: "Deep interior cleaning",
+    tier: "Interior Refresh",
+    title: "Cabins cleaned with care",
     body:
-      "A strong option for vehicles that need more than a quick vacuum. This service is geared toward built-up dust, everyday mess, and restoring a cleaner cabin overall.",
+      "A strong fit for daily drivers that need the dust, crumbs, buildup, and everyday wear cleaned up so the inside feels fresh again.",
     points: [
-      "Seats, carpets, mats, and hard surfaces addressed",
-      "Dash, console, door panels, and trim cleaned",
-      "Great for family vehicles and daily drivers",
+      "Seats, mats, carpets, dash, and trim addressed",
+      "Designed for practical everyday cleanup",
+      "Ideal before road trips, events, or regular upkeep",
     ],
   },
   {
     tier: "Full Detail",
-    title: "Complete inside and out service",
+    title: "Inside and outside attention in one visit",
     body:
-      "For drivers who want the interior cleaned and the exterior brought back to a cleaner, glossier finish in one appointment.",
+      "For drivers who want the convenience of a full mobile appointment that improves both the cabin and the outside presentation of the vehicle.",
     points: [
-      "Exterior wash with attention to wheels and trim",
-      "Interior vacuuming and surface cleaning",
-      "A solid choice for regular upkeep",
+      "Exterior wash and presentation-focused cleanup",
+      "Interior vacuuming and surface detailing",
+      "A simple choice when the whole vehicle needs attention",
     ],
   },
   {
-    tier: "Premium Add-Ons",
-    title: "Specialty detailing options",
+    tier: "Custom Needs",
+    title: "Service matched to the condition of the vehicle",
     body:
-      "For vehicles that need extra time or more focused work, specialty add-ons can be discussed based on condition and the result you want.",
+      "If your vehicle needs heavier cleanup or you want to explain exactly what you are dealing with, Exodus can talk through the job and point you in the right direction.",
     points: [
-      "Heavier interior cleanup when needed",
-      "Additional finish and presentation work",
-      "Best handled with a custom quote",
+      "Helpful for vehicles with extra buildup or neglected areas",
+      "Clear communication before the work starts",
+      "Best handled by phone for the right quote and timing",
     ],
   },
 ];
 
 const promiseCards = [
   {
-    title: "Convenience first",
+    title: "Shows up and communicates well",
     body:
-      "You do not need to sit at a shop or rearrange your day around a wash. Mobile detailing keeps the process simple and direct.",
+      "Reviews consistently highlight prompt replies, on-time arrival, and a professional experience from start to finish.",
   },
   {
-    title: "More care for the finish",
+    title: "Mobile convenience",
     body:
-      "A proper detail is about more than making the vehicle wet and shiny. It is about cleaner surfaces, better presentation, and more deliberate care.",
+      "You do not have to wait around at a shop. The service comes to you, which makes detailing much easier to fit into a busy week.",
   },
   {
-    title: "Built for busy Fort Worth drivers",
+    title: "Respectful, straightforward service",
     body:
-      "Whether the vehicle is parked at home or at work, the service is positioned around convenience, flexibility, and a cleaner end result.",
+      "Customers call out courteous service, honest pricing, and quality work without pressure for unnecessary add-ons.",
   },
 ];
 
 const contactItems = [
   {
     label: "Phone",
-    value: "(817) 842-3017",
-    href: "tel:8178423017",
+    value: "(505) 305-9556",
+    href: "tel:5053059556",
   },
   {
-    label: "Email",
-    value: "fortworth@platinummobilecardetailing.com",
-    href: "mailto:fortworth@platinummobilecardetailing.com",
+    label: "Location",
+    value: "6405 Lomas Blvd NE, Albuquerque, NM 87110",
+    href: "https://maps.google.com/?q=6405+Lomas+Blvd+NE+Albuquerque+NM+87110",
+  },
+  {
+    label: "Hours",
+    value: "Open now, closes at 6 PM",
+    href: "#booking",
   },
 ];
 
 const reviews = [
   {
-    name: "Ricardo Ponce de Leon",
-    meta: "1 review • a day ago",
+    name: "Gregory Piraino",
+    meta: "Local Guide • 18 reviews • 2 photos",
     text:
-      "Got my windows tinted by Platinum Mobile Car Detailing of Fort Worth and it honestly changed the whole vibe of my car. It looks way cleaner and I do not feel like I am getting cooked every time I drive anymore. The tint came out super even, with no weird lines or bubbles or anything like that. They pulled up, got straight to it, and did not waste time. Just a smooth, easy experience all around.",
+      "Christian was a great communicator, returned my call promptly, showed up exactly on time, worked hard for the entire amount of time we agreed upon, brought all his own materials, tools, and supplies, did an amazing job on our car, and then charged me what he said he would. Overall he and his assistant were timely, courteous, respectful, professional, and did a great job. I highly recommend Christian's services.",
   },
   {
-    name: "Tyler Bulldock",
-    meta: "1 review • 3 days ago",
-    text:
-      "Had Platinum Mobile Car Detailing of Fort Worth come out to clean up my boat and I am honestly glad I did. It was starting to look pretty rough from being out on the water all the time, but they got it cleaned up really nice. The whole process felt easy, professional, and worth it.",
-  },
-  {
-    name: "Alexa Ledezma",
-    meta: "4 reviews • 4 days ago",
-    text:
-      "Great experience with Platinum Mobile Car Detailing of Fort Worth. Super convenient mobile service, showed up on time, and my car looks brand new. If you need car detailing in Fort Worth, definitely recommend them.",
+    name: "Antoinette “Golden” Bodmann",
+    meta: "2 reviews • 1 photo",
+    text: "Exodus do great work.",
   },
 ];
 
@@ -110,13 +108,13 @@ export default function Home() {
         <header className="flex flex-col gap-5 rounded-[2rem] border border-[color:var(--line)] bg-white/85 px-6 py-5 shadow-[0_18px_40px_rgba(7,17,28,0.05)] backdrop-blur md:flex-row md:items-center md:justify-between">
           <a href="#home" className="flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[color:var(--steel-dark)] text-lg font-semibold text-white">
-              P
+              E
             </div>
             <div>
               <p className="text-lg font-semibold text-[color:var(--ink-strong)]">
-                Platinum Mobile Car Detailing
+                Exodus Auto Detailing
               </p>
-              <p className="text-sm text-[color:var(--muted)]">Fort Worth, Texas</p>
+              <p className="text-sm text-[color:var(--muted)]">Albuquerque, New Mexico</p>
             </div>
           </a>
 
@@ -127,11 +125,11 @@ export default function Home() {
             <a href="#results" className="hover:text-[color:var(--ink-strong)]">
               Results
             </a>
-            <a href="#why-platinum" className="hover:text-[color:var(--ink-strong)]">
-              Why Platinum
+            <a href="#why-exodus" className="hover:text-[color:var(--ink-strong)]">
+              Why Exodus
             </a>
             <a href="#booking" className="hover:text-[color:var(--ink-strong)]">
-              Book
+              Contact
             </a>
           </nav>
 
@@ -139,7 +137,7 @@ export default function Home() {
             href="#booking"
             className="inline-flex items-center justify-center rounded-full bg-[color:var(--steel-dark)] px-5 py-3 text-sm font-semibold text-white hover:-translate-y-0.5"
           >
-            Book a Detail
+            Call for Availability
           </a>
         </header>
       </div>
@@ -150,16 +148,15 @@ export default function Home() {
       >
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="space-y-7">
-            <p className="section-kicker">Mobile detailing for Fort Worth drivers</p>
+            <p className="section-kicker">Mobile detailing in Albuquerque</p>
             <h1 className="display-heading max-w-4xl text-5xl leading-[0.95] text-[color:var(--ink-strong)] md:text-7xl">
-              Professional car detailing that comes to your driveway.
+              Quality detailing with the kind of follow-through people remember.
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-[color:var(--muted)] md:text-xl">
-              Platinum Mobile Car Detailing provides mobile interior and exterior detailing
-              for drivers across Fort Worth who want quality work without the hassle of
-              dropping the vehicle off. Whether your car needs a simple refresh or a more
-              thorough cleanup, the focus is on dependable service and a noticeably cleaner
-              finish.
+              Exodus Auto Detailing brings mobile detailing service to Albuquerque
+              drivers who want their vehicle cleaned up without the usual runaround.
+              Reviews point to strong communication, punctuality, respectful service,
+              and work that leaves cars looking noticeably better.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -167,25 +164,25 @@ export default function Home() {
                 href="#booking"
                 className="rounded-full bg-[color:var(--steel-dark)] px-6 py-3 text-sm font-semibold text-white hover:-translate-y-0.5"
               >
-                Request a Booking
+                Request a Call Back
               </a>
               <a
                 href="#results"
                 className="rounded-full border border-[color:var(--line-strong)] bg-white px-6 py-3 text-sm font-semibold text-[color:var(--ink-strong)] hover:-translate-y-0.5"
               >
-                See Recent Work
+                View the Demo Gallery
               </a>
             </div>
 
             <ul className="flex flex-wrap gap-3 text-sm font-medium text-[color:var(--steel-dark)]">
               <li className="rounded-full bg-white px-4 py-2 shadow-[0_10px_24px_rgba(7,17,28,0.04)]">
-                Mobile service at your home or workplace
+                5.0 rating on Google
               </li>
               <li className="rounded-full bg-white px-4 py-2 shadow-[0_10px_24px_rgba(7,17,28,0.04)]">
-                Interior and exterior detailing
+                Mobile service with on-time communication
               </li>
               <li className="rounded-full bg-white px-4 py-2 shadow-[0_10px_24px_rgba(7,17,28,0.04)]">
-                Fort Worth area appointments
+                Albuquerque appointments near Lomas Blvd NE
               </li>
             </ul>
           </div>
@@ -219,18 +216,18 @@ export default function Home() {
               <div className="flex flex-col justify-between rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_20px_48px_rgba(7,17,28,0.08)] motion-lift">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">
-                    Contact Platinum
+                    Contact Exodus
                   </p>
                   <p className="mt-4 text-3xl font-semibold text-[color:var(--ink-strong)]">
-                    (817) 842-3017
+                    (505) 305-9556
                   </p>
                   <p className="mt-3 text-base leading-7 text-[color:var(--muted)]">
-                    fortworth@platinummobilecardetailing.com
+                    6405 Lomas Blvd NE, Albuquerque, NM 87110
                   </p>
                 </div>
                 <p className="mt-5 text-sm leading-7 text-[color:var(--muted)]">
-                  Call or send a message to ask about availability, service options, or the
-                  right detail for your vehicle.
+                  Call to ask about vehicle condition, availability, and the right level of
+                  detailing for your car.
                 </p>
               </div>
             </div>
@@ -240,34 +237,36 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-7xl gap-5 px-5 py-6 motion-fade-up md:px-8 lg:grid-cols-3 lg:px-10">
         <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5 motion-lift">
-          <p className="font-semibold text-[color:var(--ink-strong)]">Mobile service</p>
+          <p className="font-semibold text-[color:var(--ink-strong)]">5-star reputation</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
-            A more convenient way to get your vehicle detailed without waiting at a shop.
+            Early reviews are small in count but very strong in quality, especially around
+            reliability and professionalism.
           </p>
         </div>
         <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5 motion-lift">
-          <p className="font-semibold text-[color:var(--ink-strong)]">Interior and exterior care</p>
+          <p className="font-semibold text-[color:var(--ink-strong)]">Straightforward service</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
-            Built around what most drivers actually need: interior cleaning, exterior detailing,
-            or both.
+            Customers specifically mention that the work is done well without being pushed into
+            added services they did not ask for.
           </p>
         </div>
         <div className="rounded-[1.6rem] border border-[color:var(--line)] bg-white px-6 py-5 motion-lift">
-          <p className="font-semibold text-[color:var(--ink-strong)]">Simple booking path</p>
+          <p className="font-semibold text-[color:var(--ink-strong)]">Convenient local contact</p>
           <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
-            Clear contact details and a straightforward request form make it easy to get started.
+            Clear phone contact and a known Albuquerque location make it easy to start the
+            conversation.
           </p>
         </div>
       </section>
 
       <section
-        id="why-platinum"
+        id="why-exodus"
         className="mx-auto max-w-7xl px-5 py-20 motion-fade-up md:px-8 lg:px-10"
       >
         <div className="space-y-4">
-          <p className="section-kicker">Why drivers choose mobile detailing</p>
+          <p className="section-kicker">Why drivers choose Exodus</p>
           <h2 className="section-title text-[color:var(--ink-strong)]">
-            Quality detailing without taking extra time out of your day.
+            A mobile detailer people trust to show up, work hard, and keep it simple.
           </h2>
         </div>
 
@@ -293,7 +292,7 @@ export default function Home() {
         <div className="space-y-4">
           <p className="section-kicker">Services</p>
           <h2 className="section-title text-[color:var(--ink-strong)]">
-            Interior, exterior, and full-service detailing options.
+            Mobile detailing built around what your vehicle actually needs.
           </h2>
         </div>
 
@@ -347,9 +346,9 @@ export default function Home() {
         className="mx-auto max-w-7xl px-5 py-20 motion-fade-up md:px-8 lg:px-10"
       >
         <div className="space-y-4">
-          <p className="section-kicker">Recent look and feel</p>
+          <p className="section-kicker">Results</p>
           <h2 className="section-title text-[color:var(--ink-strong)]">
-            A look at the finish and presentation style.
+            The same polished visual style from the Platinum demo, repurposed for Exodus.
           </h2>
         </div>
 
@@ -365,7 +364,7 @@ export default function Home() {
               />
             </div>
             <figcaption className="px-5 py-4 text-sm leading-6 text-[color:var(--muted)]">
-              Clean exterior presentation with a strong gloss finish.
+              Glossy exterior presentation to communicate finish, care, and attention to detail.
             </figcaption>
           </figure>
 
@@ -384,7 +383,8 @@ export default function Home() {
                 />
               </div>
               <figcaption className="px-5 py-4 text-sm leading-6 text-[color:var(--muted)]">
-                Additional vehicle presentation from the current site imagery.
+                Reused demo imagery from the Platinum Mobile version, now framed for Exodus Auto
+                Detailing.
               </figcaption>
             </figure>
           ))}
@@ -396,17 +396,17 @@ export default function Home() {
           <div className="space-y-5">
             <p className="section-kicker">Customer feedback</p>
             <h2 className="section-title text-[color:var(--ink-strong)]">
-              Real reviews from Fort Worth customers.
+              Real Google review language from Exodus customers.
             </h2>
             <p className="text-base leading-8 text-[color:var(--muted)]">
-              Customers talk about the convenience of the mobile service, the quality of the
-              work, and how much better their vehicles look when the job is done.
+              Even with a small review count, the themes are strong: responsive communication,
+              punctuality, professionalism, and work worth recommending.
             </p>
           </div>
 
           <div className="review-marquee-shell">
             <div className="review-marquee-track">
-              {[...reviews, ...reviews].map((review, index) => (
+              {[...reviews, ...reviews, ...reviews].map((review, index) => (
                 <article
                   key={`${review.name}-${index}`}
                   className="review-card-slide rounded-[1.6rem] border border-[color:var(--line)] bg-[color:var(--surface-muted)] p-5 shadow-[0_14px_34px_rgba(7,17,28,0.05)]"
@@ -419,7 +419,7 @@ export default function Home() {
                       <p className="mt-1 text-sm text-[color:var(--muted)]">{review.meta}</p>
                     </div>
                     <p className="text-sm font-semibold tracking-[0.16em] text-[color:var(--steel-dark)]">
-                      ★★★★★
+                      5.0
                     </p>
                   </div>
                   <p className="mt-4 text-base leading-7 text-[color:var(--steel-dark)]">
@@ -438,14 +438,14 @@ export default function Home() {
       >
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <div className="space-y-6">
-            <p className="section-kicker">Book your detail</p>
+            <p className="section-kicker">Contact Exodus</p>
             <h2 className="section-title text-[color:var(--ink-strong)]">
-              Request your appointment today.
+              Reach out and describe what your vehicle needs.
             </h2>
             <p className="text-lg leading-8 text-[color:var(--muted)]">
-              Tell Platinum about your vehicle, your location, and the type of detailing you
-              need. If you are not sure which service makes the most sense, just include a few
-              details and you can be pointed in the right direction.
+              Tell Exodus Auto Detailing what you drive, where you are in Albuquerque, and what
+              kind of cleanup or detailing you want handled. If the vehicle needs extra attention,
+              a quick phone conversation is the easiest way to sort out the next step.
             </p>
 
             <div className="space-y-4 rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_18px_40px_rgba(7,17,28,0.05)] motion-lift">
@@ -460,7 +460,7 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="rounded-[2.2rem] bg-[#dceaf7] p-6 shadow-[0_26px_70px_rgba(95,126,153,0.16)] motion-float md:p-10">
+          <form className="rounded-[2.2rem] bg-[#e3edf7] p-6 shadow-[0_26px_70px_rgba(95,126,153,0.16)] motion-float md:p-10">
             <div className="grid gap-5 md:grid-cols-2">
               <label className="space-y-3">
                 <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[color:var(--steel-dark)]">
@@ -478,7 +478,7 @@ export default function Home() {
                 </span>
                 <input
                   type="tel"
-                  placeholder="(817) 555-0182"
+                  placeholder="(505) 555-0182"
                   className="w-full rounded-[1.3rem] border border-[#b9c6d5] bg-white px-5 py-4 text-lg text-[color:var(--ink-strong)] outline-none placeholder:text-[#97a4b3]"
                 />
               </label>
@@ -488,7 +488,7 @@ export default function Home() {
                 </span>
                 <input
                   type="text"
-                  placeholder="2022 Chevy Tahoe"
+                  placeholder="2021 Toyota Camry"
                   className="w-full rounded-[1.3rem] border border-[#b9c6d5] bg-white px-5 py-4 text-lg text-[color:var(--ink-strong)] outline-none placeholder:text-[#97a4b3]"
                 />
               </label>
@@ -497,11 +497,9 @@ export default function Home() {
                   Service
                 </span>
                 <select className="w-full rounded-[1.3rem] border border-[#b9c6d5] bg-white px-5 py-4 text-lg text-[color:var(--ink-strong)] outline-none">
-                  <option>Interior detail</option>
+                  <option>Interior refresh</option>
                   <option>Full detail</option>
-                  <option>Premium add-ons</option>
-                  <option>Window tint</option>
-                  <option>Boat detailing</option>
+                  <option>Custom quote</option>
                 </select>
               </label>
               <label className="space-y-3 md:col-span-2">
@@ -510,7 +508,7 @@ export default function Home() {
                 </span>
                 <textarea
                   rows={5}
-                  placeholder="Example: I have a family SUV with pet hair in the back seats and would like an interior detail this week at my home in Fort Worth."
+                  placeholder="Example: I have an SUV near Lomas Blvd with dusty carpets and stained seats. I would like to know if you have availability this week for a full detail."
                   className="w-full resize-none rounded-[1.3rem] border border-[#b9c6d5] bg-white px-5 py-4 text-lg leading-8 text-[color:var(--ink-strong)] outline-none placeholder:text-[#97a4b3]"
                 />
               </label>
@@ -521,10 +519,10 @@ export default function Home() {
                 type="button"
                 className="rounded-full bg-[#516988] px-8 py-4 text-lg font-semibold text-white hover:-translate-y-0.5"
               >
-                Request My Booking
+                Request Service Info
               </button>
               <p className="text-sm leading-6 text-[color:var(--steel-dark)]/80">
-                Call or text for faster scheduling help.
+                Calling directly is the fastest way to book.
               </p>
             </div>
           </form>

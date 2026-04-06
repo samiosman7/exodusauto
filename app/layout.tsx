@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Platinum Mobile Car Detailing Demo",
+  title: "Exodus Auto Detailing Demo",
   description:
-    "A redesigned demo homepage for Platinum Mobile Car Detailing built around the exact live domain and clearly labeled placeholder specifics.",
+    "A redesigned demo homepage for Exodus Auto Detailing built around the company details, reviews, and location provided for Albuquerque, New Mexico.",
 };
 
 export default function RootLayout({
