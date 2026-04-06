@@ -89,8 +89,8 @@ const processSteps = [
 
 const statCards = [
   { value: "5.0", label: "Google rating" },
-  { value: "2", label: "Public reviews so far" },
-  { value: "6 PM", label: "Current closing time listed" },
+  { value: "2", label: "Public reviews" },
+  { value: "6 PM", label: "Closing time listed" },
 ];
 
 const contactItems = [
@@ -114,13 +114,13 @@ const contactItems = [
 const reviews = [
   {
     name: "Gregory Piraino",
-    meta: "Local Guide • 18 reviews • 2 photos",
+    meta: "Local Guide | 18 reviews | 2 photos",
     text:
       "Christian was a great communicator, returned my call promptly, showed up exactly on time, worked hard for the entire amount of time we agreed upon, brought all his own materials, tools, and supplies, did an amazing job on our car, and then charged me what he said he would. Overall he and his assistant were timely, courteous, respectful, professional, and did a great job. I highly recommend Christian's services.",
   },
   {
     name: 'Antoinette "Golden" Bodmann',
-    meta: "2 reviews • 1 photo",
+    meta: "2 reviews | 1 photo",
     text: "Exodus do great work.",
   },
 ];
@@ -129,9 +129,9 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[color:var(--background)] text-[color:var(--foreground)]">
       <div className="mx-auto max-w-7xl px-5 py-5 md:px-8 lg:px-10">
-        <header className="flex flex-col gap-5 rounded-[2rem] border border-white/30 bg-[color:var(--surface-strong)] px-6 py-5 shadow-[0_18px_40px_rgba(5,15,28,0.18)] backdrop-blur md:flex-row md:items-center md:justify-between">
+        <header className="glass-panel-strong flex flex-col gap-5 rounded-[2rem] px-6 py-5 md:flex-row md:items-center md:justify-between">
           <a href="#home" className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[color:var(--ember)] text-lg font-semibold text-white shadow-[0_10px_30px_rgba(225,98,54,0.35)]">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[color:var(--ember)] text-lg font-semibold text-white shadow-[0_10px_30px_rgba(217,138,87,0.28)]">
               E
             </div>
             <div>
@@ -143,23 +143,23 @@ export default function Home() {
           </a>
 
           <nav className="flex flex-wrap gap-5 text-sm font-medium text-[color:var(--muted)]">
-            <a href="#services" className="hover:text-white">
+            <a href="#services" className="hover:text-[color:var(--ink-strong)]">
               Services
             </a>
-            <a href="#results" className="hover:text-white">
+            <a href="#results" className="hover:text-[color:var(--ink-strong)]">
               Results
             </a>
-            <a href="#why-exodus" className="hover:text-white">
+            <a href="#why-exodus" className="hover:text-[color:var(--ink-strong)]">
               Why Exodus
             </a>
-            <a href="#booking" className="hover:text-white">
+            <a href="#booking" className="hover:text-[color:var(--ink-strong)]">
               Contact
             </a>
           </nav>
 
           <a
             href="tel:5053059556"
-            className="inline-flex items-center justify-center rounded-full bg-[color:var(--ember)] px-5 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(225,98,54,0.3)] hover:-translate-y-0.5 hover:bg-[color:var(--ember-deep)]"
+            className="inline-flex items-center justify-center rounded-full bg-[color:var(--ember)] px-5 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(217,138,87,0.25)] hover:-translate-y-0.5 hover:bg-[color:var(--ember-deep)]"
           >
             Call Now
           </a>
@@ -185,26 +185,26 @@ export default function Home() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="tel:5053059556"
-                className="rounded-full bg-[color:var(--ember)] px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(225,98,54,0.3)] hover:-translate-y-0.5"
+                className="rounded-full bg-[color:var(--ember)] px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(217,138,87,0.25)] hover:-translate-y-0.5"
               >
                 Call (505) 305-9556
               </a>
               <a
                 href="#services"
-                className="rounded-full border border-white/25 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:-translate-y-0.5 hover:bg-white/12"
+                className="rounded-full border border-white/20 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:-translate-y-0.5 hover:bg-white/12"
               >
                 View Services
               </a>
             </div>
 
             <ul className="flex flex-wrap gap-3 text-sm font-medium text-white/90">
-              <li className="rounded-full border border-white/15 bg-white/8 px-4 py-2 backdrop-blur">
+              <li className="rounded-full border border-white/14 bg-white/8 px-4 py-2 backdrop-blur">
                 5.0 Google rating
               </li>
-              <li className="rounded-full border border-white/15 bg-white/8 px-4 py-2 backdrop-blur">
+              <li className="rounded-full border border-white/14 bg-white/8 px-4 py-2 backdrop-blur">
                 Mobile appointments in Albuquerque
               </li>
-              <li className="rounded-full border border-white/15 bg-white/8 px-4 py-2 backdrop-blur">
+              <li className="rounded-full border border-white/14 bg-white/8 px-4 py-2 backdrop-blur">
                 Located on Lomas Blvd NE
               </li>
             </ul>
@@ -214,7 +214,7 @@ export default function Home() {
             <div className="hero-orb hero-orb-one" />
             <div className="hero-orb hero-orb-two" />
 
-            <div className="relative overflow-hidden rounded-[2.4rem] border border-white/20 bg-white/10 p-4 shadow-[0_28px_80px_rgba(0,0,0,0.22)] backdrop-blur">
+            <div className="glass-dark relative overflow-hidden rounded-[2.4rem] p-4">
               <div className="grid gap-4 lg:grid-cols-[1.12fr_0.88fr]">
                 <div className="relative min-h-[28rem] overflow-hidden rounded-[2rem]">
                   <Image
@@ -227,7 +227,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                  <div className="rounded-[1.7rem] border border-white/15 bg-[color:var(--surface)] p-5 shadow-[0_14px_34px_rgba(5,15,28,0.16)] motion-lift">
+                  <div className="glass-panel rounded-[1.7rem] p-5 motion-lift">
                     <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">
                       Contact
                     </p>
@@ -241,7 +241,7 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <div className="relative min-h-[11.5rem] overflow-hidden rounded-[1.7rem] border border-white/15 shadow-[0_14px_34px_rgba(5,15,28,0.16)] motion-lift">
+                  <div className="relative min-h-[11.5rem] overflow-hidden rounded-[1.7rem] border border-white/12 shadow-[0_14px_34px_rgba(5,15,28,0.16)] motion-lift">
                     <Image
                       src={galleryImages[1].src}
                       alt={galleryImages[1].alt}
@@ -251,11 +251,11 @@ export default function Home() {
                     />
                   </div>
 
-                  <div className="rounded-[1.7rem] border border-[color:var(--teal-glow)] bg-[color:var(--night-soft)] p-5 text-white shadow-[0_18px_40px_rgba(3,10,19,0.32)] motion-lift">
+                  <div className="glass-dark rounded-[1.7rem] p-5 text-white motion-lift">
                     <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--mist)]">
                       Why people recommend Exodus
                     </p>
-                    <p className="mt-4 text-base leading-7 text-white/88">
+                    <p className="mt-4 text-base leading-7 text-white/84">
                       Prompt replies, on-time arrival, honest pricing, and detailing work that
                       looks noticeably better when it is done.
                     </p>
@@ -269,7 +269,7 @@ export default function Home() {
 
       <section className="mx-auto max-w-7xl px-5 py-6 md:px-8 lg:px-10">
         <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-          <div className="rounded-[2rem] border border-[color:var(--line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.95),rgba(236,245,248,0.92))] p-7 shadow-[0_20px_50px_rgba(5,15,28,0.12)] motion-slide-left">
+          <div className="glass-panel rounded-[2rem] p-7 motion-slide-left">
             <p className="section-kicker">Why local drivers call</p>
             <h2 className="mt-4 max-w-2xl text-3xl font-semibold leading-tight text-[color:var(--ink-strong)] md:text-4xl">
               A cleaner vehicle without losing half your day to a shop visit.
@@ -285,10 +285,10 @@ export default function Home() {
             {statCards.map((card, index) => (
               <article
                 key={card.label}
-                className={`rounded-[1.6rem] border p-5 shadow-[0_18px_44px_rgba(5,15,28,0.12)] motion-pop ${
+                className={`rounded-[1.6rem] p-5 motion-pop ${
                   index === 1
-                    ? "border-[color:var(--ember)] bg-[linear-gradient(135deg,#ffefe7,#ffd7c5)]"
-                    : "border-[color:var(--line)] bg-white"
+                    ? "glass-panel-strong ring-1 ring-[color:var(--accent-soft)]"
+                    : "glass-panel"
                 }`}
               >
                 <p className="text-3xl font-semibold text-[color:var(--ink-strong)]">{card.value}</p>
@@ -316,7 +316,7 @@ export default function Home() {
           {promiseCards.map((card) => (
             <article
               key={card.title}
-              className="rounded-[1.9rem] border border-[color:var(--line)] bg-white/92 p-7 shadow-[0_22px_60px_rgba(7,17,28,0.08)] motion-lift"
+              className="glass-panel rounded-[1.9rem] p-7 motion-lift"
             >
               <h3 className="text-2xl font-semibold text-[color:var(--ink-strong)]">
                 {card.title}
@@ -346,10 +346,8 @@ export default function Home() {
           {serviceCards.map((card, index) => (
             <article
               key={card.tier}
-              className={`rounded-[2rem] border p-7 shadow-[0_22px_60px_rgba(7,17,28,0.09)] motion-lift ${
-                index === 1
-                  ? "border-[color:var(--teal-glow)] bg-[linear-gradient(180deg,#103a4a,#0a2433)] text-white"
-                  : "border-[color:var(--line)] bg-white/96"
+              className={`rounded-[2rem] p-7 motion-lift ${
+                index === 1 ? "glass-dark text-white" : "glass-panel"
               }`}
             >
               <p
@@ -379,7 +377,7 @@ export default function Home() {
                 }`}
               >
                 {card.points.map((point) => (
-                  <li key={point}>• {point}</li>
+                  <li key={point}>- {point}</li>
                 ))}
               </ul>
             </article>
@@ -389,8 +387,8 @@ export default function Home() {
 
       <section className="mx-auto max-w-7xl px-5 py-10 md:px-8 lg:px-10">
         <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="rounded-[2rem] bg-[linear-gradient(145deg,#ffede3,#ffd4be)] p-8 shadow-[0_24px_60px_rgba(225,98,54,0.18)] motion-slide-left">
-            <p className="section-kicker text-[color:var(--ember-deep)]">How it works</p>
+          <div className="glass-panel-strong rounded-[2rem] p-8 motion-slide-left">
+            <p className="section-kicker">How it works</p>
             <h2 className="mt-4 text-4xl font-semibold leading-tight text-[color:var(--ink-strong)]">
               Easy to book. Easy to understand. Easy to recommend.
             </h2>
@@ -404,7 +402,7 @@ export default function Home() {
             {processSteps.map((item, index) => (
               <article
                 key={item.step}
-                className={`rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_22px_54px_rgba(7,17,28,0.08)] motion-pop delay-${index + 1}`}
+                className={`glass-panel rounded-[1.8rem] p-6 motion-pop delay-${index + 1}`}
               >
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[color:var(--ember)]">
                   {item.step}
@@ -435,7 +433,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          <figure className="overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-white shadow-[0_20px_50px_rgba(7,17,28,0.08)] motion-lift md:col-span-2">
+          <figure className="glass-panel overflow-hidden rounded-[2rem] motion-lift md:col-span-2">
             <div className="relative h-80 w-full">
               <Image
                 src={galleryImages[0].src}
@@ -453,7 +451,7 @@ export default function Home() {
           {galleryImages.slice(1).map((image) => (
             <figure
               key={image.src}
-              className="overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-white shadow-[0_20px_50px_rgba(7,17,28,0.08)] motion-lift"
+              className="glass-panel overflow-hidden rounded-[2rem] motion-lift"
             >
               <div className="relative h-80 w-full">
                 <Image
@@ -473,7 +471,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-8 lg:px-10">
-        <div className="grid gap-8 rounded-[2.2rem] border border-[color:var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(233,241,245,0.95))] p-8 shadow-[0_24px_70px_rgba(7,17,28,0.08)] lg:grid-cols-[0.75fr_1.25fr] lg:p-10">
+        <div className="glass-panel-strong grid gap-8 rounded-[2.2rem] p-8 lg:grid-cols-[0.75fr_1.25fr] lg:p-10">
           <div className="space-y-5 motion-fade-up">
             <p className="section-kicker">Customer reviews</p>
             <h2 className="section-title text-[color:var(--ink-strong)]">
@@ -490,7 +488,7 @@ export default function Home() {
               {[...reviews, ...reviews, ...reviews].map((review, index) => (
                 <article
                   key={`${review.name}-${index}`}
-                  className="review-card-slide rounded-[1.6rem] border border-[color:var(--line)] bg-white p-5 shadow-[0_14px_34px_rgba(7,17,28,0.06)]"
+                  className="glass-panel review-card-slide rounded-[1.6rem] p-5"
                 >
                   <div className="flex items-center justify-between gap-4">
                     <div>
@@ -500,7 +498,7 @@ export default function Home() {
                       <p className="mt-1 text-sm text-[color:var(--muted)]">{review.meta}</p>
                     </div>
                     <p className="text-sm font-semibold tracking-[0.16em] text-[color:var(--ember)]">
-                      ★★★★★
+                      5-star
                     </p>
                   </div>
                   <p className="mt-4 text-base leading-7 text-[color:var(--steel-dark)]">
@@ -529,7 +527,7 @@ export default function Home() {
               condition.
             </p>
 
-            <div className="space-y-4 rounded-[1.8rem] border border-[color:var(--line)] bg-white p-6 shadow-[0_18px_40px_rgba(7,17,28,0.05)] motion-lift">
+            <div className="glass-panel rounded-[1.8rem] p-6 motion-lift">
               {contactItems.map((item) => (
                 <p key={item.label} className="text-base leading-7 text-[color:var(--muted)]">
                   <strong className="text-[color:var(--ink-strong)]">{item.label}</strong>{" "}
@@ -541,7 +539,7 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="rounded-[2.2rem] border border-white/30 bg-[linear-gradient(160deg,#17384a,#0d2431)] p-6 text-white shadow-[0_26px_70px_rgba(10,27,40,0.3)] motion-float md:p-10">
+          <form className="glass-dark rounded-[2.2rem] p-6 text-white motion-float md:p-10">
             <div className="grid gap-5 md:grid-cols-2">
               <label className="space-y-3">
                 <span className="text-sm font-semibold uppercase tracking-[0.18em] text-white/70">
@@ -598,7 +596,7 @@ export default function Home() {
             <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <button
                 type="button"
-                className="rounded-full bg-[color:var(--ember)] px-8 py-4 text-lg font-semibold text-white shadow-[0_18px_42px_rgba(225,98,54,0.32)] hover:-translate-y-0.5 hover:bg-[color:var(--ember-deep)]"
+                className="rounded-full bg-[color:var(--ember)] px-8 py-4 text-lg font-semibold text-white shadow-[0_18px_42px_rgba(217,138,87,0.28)] hover:-translate-y-0.5 hover:bg-[color:var(--ember-deep)]"
               >
                 Request Service
               </button>
