@@ -173,10 +173,10 @@ export default function Home() {
         <div className="grid gap-8 xl:grid-cols-[1.02fr_0.98fr] xl:items-center">
           <div className="space-y-7 motion-fade-up">
             <p className="section-kicker">Mobile detailing in Albuquerque</p>
-            <h1 className="display-heading max-w-4xl text-5xl leading-[0.92] text-white md:text-7xl">
+            <h1 className="display-heading max-w-4xl text-5xl leading-[0.92] text-[color:var(--ink-strong)] md:text-7xl">
               Detail work that shows up on time and leaves your vehicle looking right.
             </h1>
-            <p className="max-w-2xl text-lg leading-8 text-[color:var(--mist)] md:text-xl">
+            <p className="max-w-2xl text-lg leading-8 text-[color:var(--muted)] md:text-xl">
               Exodus Auto Detailing helps Albuquerque drivers get a cleaner, better-looking
               vehicle without the hassle of sitting at a shop. Customers describe the service
               as prompt, professional, respectful, and worth hiring again.
@@ -191,20 +191,20 @@ export default function Home() {
               </a>
               <a
                 href="#services"
-                className="rounded-full border border-white/20 bg-white/8 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:-translate-y-0.5 hover:bg-white/12"
+                className="rounded-full border border-[color:var(--line)] bg-white/35 px-6 py-3 text-sm font-semibold text-[color:var(--ink-strong)] backdrop-blur hover:-translate-y-0.5 hover:bg-white/55"
               >
                 View Services
               </a>
             </div>
 
-            <ul className="flex flex-wrap gap-3 text-sm font-medium text-white/90">
-              <li className="rounded-full border border-white/14 bg-white/8 px-4 py-2 backdrop-blur">
+            <ul className="flex flex-wrap gap-3 text-sm font-medium text-[color:var(--ink-strong)]">
+              <li className="glass-panel rounded-full px-4 py-2">
                 5.0 Google rating
               </li>
-              <li className="rounded-full border border-white/14 bg-white/8 px-4 py-2 backdrop-blur">
+              <li className="glass-panel rounded-full px-4 py-2">
                 Mobile appointments in Albuquerque
               </li>
-              <li className="rounded-full border border-white/14 bg-white/8 px-4 py-2 backdrop-blur">
+              <li className="glass-panel rounded-full px-4 py-2">
                 Located on Lomas Blvd NE
               </li>
             </ul>
@@ -251,11 +251,11 @@ export default function Home() {
                     />
                   </div>
 
-                  <div className="glass-dark rounded-[1.7rem] p-5 text-white motion-lift">
-                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--mist)]">
+                  <div className="glass-panel rounded-[1.7rem] p-5 motion-lift">
+                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--teal-deep)]">
                       Why people recommend Exodus
                     </p>
-                    <p className="mt-4 text-base leading-7 text-white/84">
+                    <p className="mt-4 text-base leading-7 text-[color:var(--steel-dark)]">
                       Prompt replies, on-time arrival, honest pricing, and detailing work that
                       looks noticeably better when it is done.
                     </p>
