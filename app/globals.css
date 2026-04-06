@@ -1,24 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #edf2f5;
+  --background: #eff6f7;
   --foreground: #142536;
   --surface: rgba(255, 255, 255, 0.9);
   --surface-strong: rgba(255, 255, 255, 0.98);
-  --surface-muted: #e3eaf0;
+  --surface-muted: #e3edf1;
   --line: rgba(20, 37, 54, 0.11);
   --line-strong: rgba(20, 37, 54, 0.2);
-  --muted: #526578;
-  --accent: #b69a6a;
-  --accent-soft: #ebe0cc;
-  --forest: #1f3852;
+  --muted: #5c6d7d;
+  --accent: #e16236;
+  --accent-soft: #ffdfcf;
+  --forest: #17384a;
   --ink-deep: #0d1b29;
   --ink-strong: #0b1723;
   --platinum: #d7dee4;
   --platinum-soft: #f6f7f5;
   --platinum-fog: #edf1f3;
   --steel: #607892;
-  --steel-dark: #23384d;
+  --steel-dark: #26435b;
+  --ember: #e16236;
+  --ember-deep: #ba4722;
+  --mist: #dbedf3;
+  --night: #07131f;
+  --night-soft: #0d2230;
+  --teal-deep: #123b4d;
+  --teal-glow: #6fc3c3;
 }
 
 @theme inline {
@@ -58,13 +65,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   background-image:
-    radial-gradient(circle at top left, rgba(182, 154, 106, 0.12), transparent 22%),
-    radial-gradient(circle at top right, rgba(122, 149, 175, 0.16), transparent 24%),
-    linear-gradient(180deg, #f7f8f7 0%, #edf2f5 46%, #e7edf1 100%);
+    radial-gradient(circle at top left, rgba(225, 98, 54, 0.14), transparent 24%),
+    radial-gradient(circle at top right, rgba(89, 181, 187, 0.18), transparent 28%),
+    linear-gradient(180deg, #f6fbfb 0%, #edf6f7 40%, #e7f0f3 100%);
 }
 
 ::selection {
-  background: rgba(182, 154, 106, 0.22);
+  background: rgba(225, 98, 54, 0.22);
   color: var(--foreground);
 }
 
@@ -89,7 +96,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--steel-dark);
+  color: var(--teal-deep);
 }
 
 .section-title {
@@ -101,6 +108,10 @@ button {
 
 .motion-fade-up {
   animation: fade-up 700ms ease-out both;
+}
+
+.motion-slide-left {
+  animation: slide-left 850ms ease-out both;
 }
 
 .motion-lift {
@@ -116,6 +127,73 @@ button {
 
 .motion-float {
   animation: float-in 900ms ease-out both;
+}
+
+.motion-pop {
+  animation: pop-in 760ms cubic-bezier(0.2, 0.9, 0.2, 1) both;
+}
+
+.delay-1 {
+  animation-delay: 80ms;
+}
+
+.delay-2 {
+  animation-delay: 150ms;
+}
+
+.delay-3 {
+  animation-delay: 220ms;
+}
+
+.hero-shell {
+  position: relative;
+}
+
+.hero-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  border-radius: 2.6rem;
+  background:
+    linear-gradient(135deg, rgba(7, 19, 31, 0.96), rgba(15, 46, 63, 0.9) 55%, rgba(8, 31, 46, 0.94)),
+    radial-gradient(circle at 18% 22%, rgba(225, 98, 54, 0.26), transparent 24%),
+    radial-gradient(circle at 88% 18%, rgba(111, 195, 195, 0.24), transparent 22%);
+  box-shadow: 0 28px 90px rgba(5, 15, 28, 0.24);
+}
+
+.hero-shell::after {
+  content: "";
+  position: absolute;
+  inset: 1.5rem;
+  z-index: -1;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(8px);
+  pointer-events: none;
+  animation: orb-drift 9s ease-in-out infinite;
+}
+
+.hero-orb-one {
+  top: -2rem;
+  right: 12%;
+  height: 10rem;
+  width: 10rem;
+  background: radial-gradient(circle, rgba(225, 98, 54, 0.7), rgba(225, 98, 54, 0));
+}
+
+.hero-orb-two {
+  bottom: 2rem;
+  left: -1rem;
+  height: 9rem;
+  width: 9rem;
+  background: radial-gradient(circle, rgba(111, 195, 195, 0.55), rgba(111, 195, 195, 0));
+  animation-delay: 1.5s;
 }
 
 .review-marquee-shell {
@@ -161,6 +239,41 @@ button {
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes orb-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(0.5rem, -0.75rem, 0) scale(1.06);
   }
 }
 
